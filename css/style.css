@@ -1,0 +1,29 @@
+@import url(https://fonts.bunny.net/css?family=bebas-neue:400);
+body{
+    height: 100vh;
+    background-image: url(../forest.jpg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column wrap;
+}
+
+h1 {
+    font-size: 75px;
+}
+
+p {
+
+    font-size: 50px;
+}
+
+a {
+    color: rgba(255,255,255,0.6);
+}
+
+hgroup{
+    font-family: "Bebas Neue","Roboto Slab", sans-serif;
+    font-stretch: 200%;
+    color: rgba(255,255,255,0.6);
+    text-align: center ;
+}
