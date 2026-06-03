@@ -1,18 +1,79 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title></title>
-    <link href="css/style.css" rel="stylesheet" />
-  </head>
-  <body>
-      <hgroup>
+    <head>
+        <!--Meta-->
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <h1>Coming soon...</h1>
-    <p>Contact me:
-        <br />
-        <a href="mailto:jannick@huettel.dev">jannick@huettel.dev</a></p>
-      </hgroup>
-  </body>
+        <!--Title-->
+        <title>Jannick Huettel</title>
+
+        <!--Fediverse credits-->
+        <meta name="fediverse:creator" content="REPLACEME" />
+
+        <!--OpenGraph-->
+        <meta property="og:title" content="Jannick Hüttel" />
+        <meta property="og:description" content="The website of Jannick Hüttel." />
+
+        <!--Icons-->
+        <link rel="apple-touch-icon" href="/assets/img/apple-touch-icon.jpg" />
+        <link rel="icon" type="image/x-icon" href="/assets/img/favicon.ico" />
+        <link rel="icon" type="image/jpg" sizes="48x48" href="/assets/img/48x48.jpg" />
+        <link rel="icon" type="image/jpg" sizes="32x32" href="/assets/img/32x32.jpg" />
+        <link rel="icon" type="image/jpg" sizes="16x16" href="/assets/img/16x16.jpg" />
+
+        <!--Indie Auth-->
+        <link rel="me" href="https://mastodon.social/REPLACEME" />
+        <link rel="me" href="https://codeberg.org/huetteljannick" />
+        <link rel="me" href="https://github.com/huetteljannick" />
+
+        <!--CSS-->
+        <link href="css/style.css" rel="stylesheet" />
+
+        <!--FontAwesome-->
+        <link href="/assets/fontawesome/css/fontawesome.min.css" rel="stylesheet"/>
+        <link href="/assets/fontawesome/css/brands.min.css" rel="stylesheet"/>
+        <link href="/assets/fontawesome/css/solid.min.css" rel="stylesheet"/>
+
+    </head>
+    <body>
+            <nav id="nav" >
+
+            <a href="/">Jannick Hüttel</a>
+                <ul>
+                    <li>
+                        <span>
+                            <label class="themeswitch" for="light" onclick="lightmode()">
+                                <input id="light" type="radio" name="theme" />
+                                ☼ Helle Ansicht
+                            </label>
+                            <label class="themeswitch" for="dark" onclick="darkmode()">
+                                <input id="dark" type="radio" name="theme" />
+                                ☾ Dunkle Ansicht
+                            </label>
+                        </span>
+                    </li>
+                </ul>
+            </nav>
+            <header>
+                <img src="/assets/img/ich.jpg" alt="A picture of me" />
+                <h1>Hallo, ich bin Jannick</h1>
+            </header>
+
+        <article id="hero">
+                <p>Ich komme vom Bodensee.
+                    Derzeit mache ich an einem technischen Gymnasium mein Abitur mit Schwerpunkt auf Informatik.
+                    Ich suche nach Abschluss meines Abiturs einen dualen Studienplatz im Fachbereich Wirtschaftsinformatik.
+                    Falls sie eine offene Stelle haben, melden sie sich bei mir. </p>
+        </article>
+        <section class="socials">
+                <a href="https://github.com/huetteljannick"><i class="fa-brands fa-github"></i></a>
+                <a href="https://codeberg.org/huetteljannick"><i class="fa-brands fa-forgejo"></i></a>
+                <a href="mailto:jannick@huettel.dev"><i class="fa-solid fa-envelope"></i></a>
+
+        </section>
+      <footer>
+          <i>&copy; 2026 Jannick Hüttel</i>
+      </footer>
+    </body>
 </html>
