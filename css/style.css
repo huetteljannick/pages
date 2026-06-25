@@ -1,10 +1,21 @@
-@import url(https://fonts.bunny.net/css?family=akaya-telivigala:400);
+@font-face{
+    font-family: "Akaya Telivigala";
+    src: url(../assets/AkayaTelivigala.woff2);
+}
 
 /*Colors*/
 :root{
-    --bg: light-dark(#EFEBD4,#232A2E);
-    --text: light-dark(#5C6A72,#D3C6AA);
-    --link-hover: light-dark(#3A94C5,#7FBBB3);
+    --bg: light-dark(#fbf1c7,#282828);
+    --text: light-dark(#3c3836,#ebdbb2);
+    --accent: light-dark(#458588,#458588);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
 }
 
 /* Base styling */
@@ -14,33 +25,29 @@ body {
   background: var(--bg);
   font-size: 1.5rem;
   display: flex;
-  flex-flow: column wrap;
+  flex-direction: column;
   justify-content: space-between;
-  align-items: center;
+  align-items: stretch;
+  min-height: 100vh;
   height: 100vh;
-  width: 100vw;
+  max-width: 100wh;
+  margin: 0;
+  padding: 0 1rem;
+  text-align: center;
   scroll-behavior: smooth;
 }
 
-/* Navigation Bar Styling */
-nav {
-    top:0;
-    left:0;
-    right: 0;
-    position: sticky;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background: var(--bg);
-width: 100%;
-height: auto;
-box-sizing: border-box;
-margin:0;
-padding:0.5em;
-padding-top: 0;
-}
+header {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-between;
 
-@media only screen and (width < 800px) {nav {flex-direction: column; text-align: center; &:not(:hover) {filter: none}}}
+
+    background: var(--bg);
+    width: 100%;
+    text-align: center;
+}
 
 li {
     display: inline;
@@ -53,35 +60,59 @@ ul {
   list-style: none;
 
 }
+
+main, footer {
+    flex: 1;
+    display: block;
+    width: 100%;
+    max-width: 45rem;
+    margin: 0 auto;
+}
+
+footer{
+    text-align: center;
+    font-size: 1rem;
+    margin-top: 4rem;
+}
+
+header, footer,
+main h1 {
+    margin-bottom: 2rem;
+}
+
+/* Format headers */
+h1 {
+    font-size: 3rem;
+
+    margin-bottom: 1rem;
+    overflow-wrap: break-word;
+    text-wrap: balance;
+
+    line-height: 1.1;
+}
+
 a {
-  text-decoration: none;
-  margin-left: 1.5em;
-  margin-right: 1.5em;
-  color: var(--text);
+    color: var(--text);
+    text-decoration: none;
 }
+
 a:hover {
-  color: var(--link-hover);
+    color: var(--accent);
 }
 
-/* Hero Section Styling*/
-
-header {
-    display: flex;
-    flex-flow: column wrap;
-}
-
-
-h1{
-  text-align: center;
-  font-size: 3rem;
-  color: var(--text);
+/* Reduce header size on mobile */
+@media only screen and (max-width: 720px) {
+    h1 {
+        font-size: 2.5rem;
+    }
 }
 
 p {
-    max-width: 650px;
+    margin: 1.5rem 0;
 }
 
 img {
+    display: block;
   width: 250px;
   height: 250px;
   border-radius: 100%;
@@ -108,7 +139,7 @@ input[name="theme"] {
   }
 }
 label:has(input:focus-visible) {
-  outline: 0.2em solid var(--link-hover);
+  outline: 0.2em solid var(--accent);
 }
 .themeswitch:has(input:not(:checked)):hover {
   color: var(--bg);
