@@ -47,6 +47,7 @@ header {
     background: var(--bg);
     width: 100%;
     text-align: center;
+    padding: 0 1rem;
 }
 
 li {
@@ -60,6 +61,7 @@ ul {
   list-style: none;
 
 }
+
 
 main, footer {
     flex: 1;
@@ -105,6 +107,11 @@ a:hover {
     h1 {
         font-size: 2.5rem;
     }
+
+
+header > a {
+    margin: 0 auto;
+}
 }
 
 p {
