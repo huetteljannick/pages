@@ -177,3 +177,27 @@ label:has(input:focus-visible) {
         height: 150px;
     }
 }
+
+#links {
+    position: relative;
+    display: inline-block;
+}
+
+#links::after {
+  content: "";
+  position: absolute;
+  left: 5%;
+  right: 5%;
+  bottom: 0;
+  border-bottom: 3px dotted currentColor;
+}
+
+#link-list {
+    display: flex;
+    flex-flow: column wrap;
+    align-content: center;
+}
+#link-list a {
+    width: 175px;
+    text-align: left;
+}
