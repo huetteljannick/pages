@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="de">
   <head>
-    
+    <!--Meta-->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
@@ -11,13 +11,13 @@
       content="Jannick Hüttel ist ein Informatiker aus dem Hegau."
     />
 
-    
-    <title>Hello World</title>
+    <!--Title-->
+    <title>{{ .title }}</title>
 
-    
+    <!--Fediverse credits-->
     <meta name="fediverse:creator" content="@huetteljannick@mastodon.social" />
 
-    
+    <!--OpenGraph-->
     <meta property="og:title" content="Jannick Hüttel" />
     <meta
       property="og:description"
@@ -34,7 +34,7 @@
     <meta property="og:locale" content="de_DE" />
     <meta property="og:type" content="website" />
 
-    
+    <!--Icons-->
     <link rel="apple-touch-icon" href="../assets/img/apple-touch-icon.jpg" />
     <link rel="icon" type="image/x-icon" href="../assets/img/favicon.ico" />
     <link
@@ -56,19 +56,19 @@
       href="../assets/img/16x16.jpg"
     />
 
-    
+    <!--Indie Auth-->
     <link rel="me" href="https://mastodon.social/@huetteljannick" />
     <link rel="me" href="https://codeberg.org/huetteljannick" />
     <link rel="me" href="https://github.com/huetteljannick" />
     <link rel="me" href="https://sifa.id/p/huettel.dev" />
 
-    
-    <link rel="site.standard.document" href="at://did:plc:tuorgcge5c66oqsusqzvjkcc/site.standard.document/3mrwqaq3hdh2e" />
+    <!--Standard.site-->
+    <link rel="site.standard.document" href="{{ .atUri }}" />
 
-    
+    <!--CSS-->
     <link href="../css/style.css" rel="stylesheet" />
 
-    
+    <!--FontAwesome-->
     <link href="/assets/fontawesome/css/fontawesome.min.css" rel="stylesheet" />
     <link href="/assets/fontawesome/css/brands.min.css" rel="stylesheet" />
     <link href="/assets/fontawesome/css/solid.min.css" rel="stylesheet" />
@@ -94,11 +94,3 @@
       </nav>
     </header>
     <main>
-<h1>Hello World!</h1>
-<p>This is a test to see if everything is working.</p>
-</main>
-    <footer>
-      <i>&copy; 2026 Jannick Hüttel</i>
-    </footer>
-  </body>
-</html>
