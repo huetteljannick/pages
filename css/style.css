@@ -73,7 +73,6 @@ main{
 }
 
 footer{
-    position: fixed;
     left: 0;
     bottom: 0;
     text-align: center;
@@ -112,6 +111,9 @@ a:hover {
 @media only screen and (max-width: 720px) {
     h1 {
         font-size: 2.5rem;
+    }
+    header > nav > ul {
+        flex-flow: column wrap;
     }
 
 
