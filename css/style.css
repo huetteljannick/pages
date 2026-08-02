@@ -112,6 +112,9 @@ a:hover {
     h1 {
         font-size: 2.5rem;
     }
+    header {
+        flex-flow: column wrap;
+    }
     header > nav > ul {
         flex-flow: column wrap;
     }
