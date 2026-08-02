@@ -50,11 +50,12 @@ header {
     padding: 0 1rem;
 }
 
-li {
-    display: inline;
+header > nav > ul > li {
+    display: inline-flex;
+    margin-left: 0.5em;
 }
 
-ul {
+header > nav > ul {
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -63,7 +64,7 @@ ul {
 }
 
 
-main, footer {
+main{
     flex: 1;
     display: block;
     width: 100%;
@@ -72,9 +73,14 @@ main, footer {
 }
 
 footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
     text-align: center;
     font-size: 1rem;
     margin-top: 4rem;
+    width: 100%;
+    display: inline-block;
 }
 
 header, footer,
@@ -145,13 +151,6 @@ input[name="theme"] {
     outline: none;
   }
 }
-label:has(input:focus-visible) {
-  outline: 0.2em solid var(--accent);
-}
-.themeswitch:has(input:not(:checked)):hover {
-  color: var(--bg);
-  background-color: var(--text);
-}
 
 .themeswitch {
   background-color: transparent;
@@ -161,12 +160,9 @@ label:has(input:focus-visible) {
   text-decoration: none;
   display: inline-block;
   cursor: pointer;
-  transition: 0.5s;
-  padding: 10px 10px;
-  margin: 0px 0px;
   font-family: inherit;
-  outline-offset: 2px;
 }
+
 @media screen and (max-width: 600px){
     body{
 
