@@ -1,21 +1,24 @@
-@font-face{
-    font-family: "Akaya Telivigala";
-    src: url(../assets/AkayaTelivigala.woff2);
+@font-face {
+  font-family: "Akaya Telivigala";
+  src: url(../assets/AkayaTelivigala.woff2);
 }
 
 /*Colors*/
-:root{
-    --bg: light-dark(#fbf1c7,#282828);
-    --text: light-dark(#3c3836,#ebdbb2);
-    --accent: light-dark(#458588,#458588);
+:root {
+  --bg: light-dark(#fbf1c7, #282828);
+  --text: light-dark(#3c3836, #ebdbb2);
+  --accent: light-dark(#458588, #458588);
 }
 
 * {
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-html, body {
-    height: 100%;
+html,
+body {
+  height: 100%;
 }
 
 /* Base styling */
@@ -38,21 +41,20 @@ body {
 }
 
 header {
-    display: flex;
-    flex-flow: row wrap;
-    align-items: center;
-    justify-content: space-between;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: space-between;
 
-
-    background: var(--bg);
-    width: 100%;
-    text-align: center;
-    padding: 0 1rem;
+  background: var(--bg);
+  width: 100%;
+  text-align: center;
+  padding: 0 1rem;
 }
 
 header > nav > ul > li {
-    display: inline-flex;
-    margin-left: 0.5em;
+  display: inline-flex;
+  margin-left: 0.5em;
 }
 
 header > nav > ul {
@@ -60,77 +62,75 @@ header > nav > ul {
   justify-content: flex-end;
   align-items: center;
   list-style: none;
-
 }
 
-
-main{
-    flex: 1;
-    display: block;
-    width: 100%;
-    max-width: 45rem;
-    margin: 0 auto;
+main {
+  flex: 1;
+  display: block;
+  width: 100%;
+  max-width: 45rem;
+  margin: 0 auto;
 }
 
-footer{
-    left: 0;
-    bottom: 0;
-    text-align: center;
-    font-size: 1rem;
-    margin-top: 4rem;
-    width: 100%;
-    display: inline-block;
+footer {
+  left: 0;
+  bottom: 0;
+  text-align: center;
+  font-size: 1rem;
+  margin-top: 4rem;
+  width: 100%;
+  display: inline-block;
 }
 
-header, footer,
+header,
+footer,
 main h1 {
-    margin-bottom: 2rem;
+  margin-bottom: 2rem;
 }
 
 /* Format headers */
 h1 {
-    font-size: 3rem;
+  font-size: 3rem;
 
-    margin-bottom: 1rem;
-    overflow-wrap: break-word;
-    text-wrap: balance;
+  margin-bottom: 1rem;
+  overflow-wrap: break-word;
+  text-wrap: balance;
 
-    line-height: 1.1;
+  line-height: 1.1;
 }
 
 a {
-    color: var(--text);
-    text-decoration: none;
+  color: var(--text);
+  text-decoration: none;
 }
 
 a:hover {
-    color: var(--accent);
+  color: var(--accent);
 }
 
 /* Reduce header size on mobile */
 @media only screen and (max-width: 720px) {
-    h1 {
-        font-size: 2.5rem;
-    }
-    header {
-        flex-flow: column wrap;
-    }
-    header > nav > ul {
-        flex-flow: column wrap;
-    }
+  h1 {
+    font-size: 2.5rem;
+  }
+  header {
+    flex-flow: column wrap;
+  }
+  header > nav > ul {
+    flex-flow: column wrap;
+  }
 
-
-header > a {
+  header > a {
     margin: 0 auto;
-}
+  }
 }
 
 p {
-    margin: 1.5rem 0;
+  margin: 1.5rem 0;
 }
 
 img {
-    display: block;
+  display: block;
   width: 250px;
   height: 250px;
   border-radius: 100%;
@@ -168,20 +168,19 @@ input[name="theme"] {
   font-family: inherit;
 }
 
-@media screen and (max-width: 600px){
-    body{
-
+@media screen and (max-width: 600px) {
+  body {
     font-size: 1rem;
-    }
-    img {
-        width: 150px;
-        height: 150px;
-    }
+  }
+  img {
+    width: 150px;
+    height: 150px;
+  }
 }
 
 #links {
-    position: relative;
-    display: inline-block;
+  position: relative;
+  display: inline-block;
 }
 
 #links::after {
@@ -194,11 +193,11 @@ input[name="theme"] {
 }
 
 #link-list {
-    display: flex;
-    flex-flow: column wrap;
-    align-content: center;
+  display: flex;
+  flex-flow: column wrap;
+  align-content: center;
 }
 #link-list a {
-    width: 175px;
-    text-align: left;
+  width: 175px;
+  text-align: left;
 }
