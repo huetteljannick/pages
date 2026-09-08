@@ -1,87 +1,118 @@
 <!doctype html>
 <html lang="de">
-    <head>
-        <!--Meta-->
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta http-equiv="x-ua-compatible" content="ie=edge" />
-        <meta name="author" content="Jannick Hüttel" />
-        <meta name="description" content="Jannick Hüttel ist ein Informatiker aus dem Hegau." />
+  <head>
+    <!--Meta-->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta name="author" content="Jannick Hüttel" />
+    <meta
+      name="description"
+      content="Jannick Hüttel ist ein Informatiker aus dem Hegau."
+    />
 
-        <!--Title-->
-        <title>Jannick Hüttel</title>
+    <!--Title-->
+    <title>Jannick Hüttel</title>
 
-        <!--Fediverse credits-->
-        <meta name="fediverse:creator" content="@huetteljannick@mastodon.social" />
+    <!--Fediverse credits-->
+    <meta name="fediverse:creator" content="@huetteljannick@mastodon.social" />
 
-        <!--OpenGraph-->
-        <meta property="og:title" content="Jannick Hüttel" />
-        <meta property="og:description" content="Jannick Hüttel ist ein Informatiker aus dem Hegau." />
-        <meta property="og:url" content="https://huettel.dev" />
-        <meta property="og:site_name" content="huettel.dev">
-        <meta property="og:image" content="https://huettel.dev/assets/img/social.jpg" />
-        <meta property="og:image:width" content="500">
-        <meta property="og:image:width" content="500">
-        <meta property="og:locale" content="de_DE" />
-        <meta property="og:type" content="website">
+    <!--OpenGraph-->
+    <meta property="og:title" content="Jannick Hüttel" />
+    <meta
+      property="og:description"
+      content="Jannick Hüttel ist ein Informatiker aus dem Hegau."
+    />
+    <meta property="og:url" content="https://huettel.dev" />
+    <meta property="og:site_name" content="huettel.dev" />
+    <meta
+      property="og:image"
+      content="https://huettel.dev/assets/img/social.jpg"
+    />
+    <meta property="og:image:width" content="500" />
+    <meta property="og:image:width" content="500" />
+    <meta property="og:locale" content="de_DE" />
+    <meta property="og:type" content="website" />
 
-        <!--Icons-->
-        <link rel="apple-touch-icon" href="/assets/img/apple-touch-icon.jpg" />
-        <link rel="icon" type="image/x-icon" href="/assets/img/favicon.ico" />
-        <link rel="icon" type="image/jpg" sizes="48x48" href="/assets/img/48x48.jpg" />
-        <link rel="icon" type="image/jpg" sizes="32x32" href="/assets/img/32x32.jpg" />
-        <link rel="icon" type="image/jpg" sizes="16x16" href="/assets/img/16x16.jpg" />
+    <!--Icons-->
+    <link rel="apple-touch-icon" href="/assets/img/apple-touch-icon.png" />
+    <link
+      rel="icon"
+      type="image/png"
+      href="/assets/img/favicon-96x96.png"
+      sizes="96x96"
+    />
+    <link rel="icon" type="image/svg+xml" href="/assets/img/favicon.svg" />
+    <link rel="icon" href="/assets/img/favicon.ico" sizes="32x32" />
 
-        <!--Indie Auth-->
-        <link rel="me" href="https://mastodon.social/@huetteljannick" />
-        <link rel="me" href="https://codeberg.org/huetteljannick" />
-        <link rel="me" href="https://github.com/huetteljannick" />
-        <link rel="me" href="https://sifa.id/p/huettel.dev">
+    <!--Manifest-->
+    <link rel="manifest" href="/assets/img/site.webmanifest" />
+    <meta name="theme-color" content="#458588" />
 
-        <!--CSS-->
-        <link href="css/style.css" rel="stylesheet" />
+    <!--Indie Auth-->
+    <link rel="me" href="https://mastodon.social/@huetteljannick" />
+    <link rel="me" href="https://codeberg.org/huetteljannick" />
+    <link rel="me" href="https://github.com/huetteljannick" />
+    <link rel="me" href="https://sifa.id/p/huettel.dev" />
 
-        <!--FontAwesome-->
-        <link href="/assets/fontawesome/css/fontawesome.min.css" rel="stylesheet"/>
-        <link href="/assets/fontawesome/css/brands.min.css" rel="stylesheet"/>
-        <link href="/assets/fontawesome/css/solid.min.css" rel="stylesheet"/>
-    </head>
-    <body>
-        <header>
-            <a href="/">Jannick Hüttel</a>
-            <nav>
-                <ul>
-                    <li> <a href="./blog/">Blog</a> </li>
-                    <li> <a href="../links.html">Links</a> </li>
-                    <li>
-                            <label class="themeswitch" for="light">
-                                <input id="light" type="radio" name="theme" />
-                                ☀️
-                            </label>
-                    </li>
-                    <li>
-                            <label class="themeswitch" for="dark">
-                                <input id="dark" type="radio" name="theme" />
-                                🌑
-                            </label>
-                    </li>
-                </ul>
-            </nav>
-        </header>
-        <main>
-            <h1>Ich im Web</h1>
-            <div id="link-list">
-                <a href="https://bsky.app/profile/huettel.dev" title="Bluesky"><i class="fa-brands fa-bluesky"></i> Bluesky</a>
-                <a href="https://codeberg.org/huetteljannick" title="Codeberg"><i class="fa-brands fa-codeberg"></i> Codeberg</a>
-                <a href="mailto:jannick@huettel.dev" title="Senden Sie mir eine Email"><i class="fa-solid fa-envelope"></i> Email</a>
-                <a href="https://github.com/huetteljannick" title="Github"><i class="fa-brands fa-github"></i> Github</a>
-                <a href="https://mastodon.social/@huetteljannick" title="Mastodon"><i class="fa-brands fa-mastodon"></i> Mastodon</a>
-                <a href="https://matrix.to/#/@huetteljannick:matrix.org" title="Matrix"><i class="fa-brands fa-matrix"></i> Matrix</a>
-                <a href="https://sifa.id/p/huettel.dev" title="Sifa ID"><i class="fa-solid fa-id-card"></i> Sifa ID</a>
-            </div>
-        </main>
-        <footer>
-            <i>&copy; 2026 Jannick Hüttel</i>
-        </footer>
-    </body>
+    <!--CSS-->
+    <link href="css/style.css" rel="stylesheet" />
+
+    <!--FontAwesome-->
+    <link href="/assets/fontawesome/css/fontawesome.min.css" rel="stylesheet" />
+    <link href="/assets/fontawesome/css/brands.min.css" rel="stylesheet" />
+    <link href="/assets/fontawesome/css/solid.min.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header>
+      <a href="/">Jannick Hüttel</a>
+      <nav>
+        <ul>
+          <li><a href="./blog/">Blog</a></li>
+          <li><a href="../links.html">Links</a></li>
+          <li>
+            <label class="themeswitch" for="light">
+              <input id="light" type="radio" name="theme" />
+              ☀️
+            </label>
+          </li>
+          <li>
+            <label class="themeswitch" for="dark">
+              <input id="dark" type="radio" name="theme" />
+              🌑
+            </label>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <h1>Ich im Web</h1>
+      <div id="link-list">
+        <a href="https://bsky.app/profile/huettel.dev" title="Bluesky"
+          ><i class="fa-brands fa-bluesky"></i> Bluesky</a
+        >
+        <a href="https://codeberg.org/huetteljannick" title="Codeberg"
+          ><i class="fa-brands fa-codeberg"></i> Codeberg</a
+        >
+        <a href="mailto:jannick@huettel.dev" title="Senden Sie mir eine Email"
+          ><i class="fa-solid fa-envelope"></i> Email</a
+        >
+        <a href="https://github.com/huetteljannick" title="Github"
+          ><i class="fa-brands fa-github"></i> Github</a
+        >
+        <a href="https://mastodon.social/@huetteljannick" title="Mastodon"
+          ><i class="fa-brands fa-mastodon"></i> Mastodon</a
+        >
+        <a href="https://matrix.to/#/@huetteljannick:matrix.org" title="Matrix"
+          ><i class="fa-brands fa-matrix"></i> Matrix</a
+        >
+        <a href="https://sifa.id/p/huettel.dev" title="Sifa ID"
+          ><i class="fa-solid fa-id-card"></i> Sifa ID</a
+        >
+      </div>
+    </main>
+    <footer>
+      <i>&copy; 2026 Jannick Hüttel</i>
+    </footer>
+  </body>
 </html>
