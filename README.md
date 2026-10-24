@@ -1,3 +1,3 @@
-# pages
+# My Website
 
-Personal website hosted at https://huettel.dev
+Personal website hosted at <https://huettel.dev>

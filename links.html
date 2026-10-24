@@ -59,16 +59,50 @@
     <link href="css/style.css" rel="stylesheet" />
 
     <!--FontAwesome-->
-    <link href="/assets/fontawesome/css/fontawesome.min.css" rel="stylesheet" />
-    <link href="/assets/fontawesome/css/brands.min.css" rel="stylesheet" />
-    <link href="/assets/fontawesome/css/solid.min.css" rel="stylesheet" />
+    <link
+      rel="preload"
+      href="/assets/fontawesome/css/fontawesome.min.css"
+      as="style"
+      onload="
+        this.onload = null;
+        this.rel = 'stylesheet';
+      "
+    />
+    <noscript
+      ><link
+        rel="stylesheet"
+        href="/assets/fontawesome/css/fontawesome.min.css"
+    /></noscript>
+    <link
+      rel="preload"
+      href="/assets/fontawesome/css/brands.min.css"
+      as="style"
+      onload="
+        this.onload = null;
+        this.rel = 'stylesheet';
+      "
+    />
+    <noscript
+      ><link rel="stylesheet" href="/assets/fontawesome/css/brands.min.css"
+    /></noscript>
+    <link
+      rel="preload"
+      href="/assets/fontawesome/css/solid.min.css"
+      as="style"
+      onload="
+        this.onload = null;
+        this.rel = 'stylesheet';
+      "
+    />
+    <noscript
+      ><link rel="stylesheet" href="/assets/fontawesome/css/solid.min.css"
+    /></noscript>
   </head>
   <body>
     <header>
       <a href="/">Jannick Hüttel</a>
       <nav>
         <ul>
-          <li><a href="./blog/">Blog</a></li>
           <li><a href="../links.html">Links</a></li>
           <li>
             <label class="themeswitch" for="light">
@@ -86,9 +120,9 @@
       </nav>
     </header>
     <main>
-      <h1>Ich im Web</h1>
+      <h1>Ich im Internet</h1>
       <div id="link-list">
-        <a href="https://bsky.app/profile/huettel.dev" title="Bluesky"
+        <a href="https://mu.social/profile/huettel.dev" title="Bluesky"
           ><i class="fa-brands fa-bluesky"></i> Bluesky</a
         >
         <a href="https://codeberg.org/huetteljannick" title="Codeberg"
@@ -99,12 +133,6 @@
         >
         <a href="https://github.com/huetteljannick" title="Github"
           ><i class="fa-brands fa-github"></i> Github</a
-        >
-        <a href="https://mastodon.social/@huetteljannick" title="Mastodon"
-          ><i class="fa-brands fa-mastodon"></i> Mastodon</a
-        >
-        <a href="https://matrix.to/#/@huetteljannick:matrix.org" title="Matrix"
-          ><i class="fa-brands fa-matrix"></i> Matrix</a
         >
         <a href="https://sifa.id/p/huettel.dev" title="Sifa ID"
           ><i class="fa-solid fa-id-card"></i> Sifa ID</a
